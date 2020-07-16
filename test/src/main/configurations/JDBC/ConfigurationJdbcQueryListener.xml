@@ -88,7 +88,7 @@
 				<forward name="success" path="do_success" />
 			</pipe>
 			<pipe name="SelectData" className="nl.nn.adapterframework.pipes.XsltPipe"
-				styleSheetName="xsl/md2-in-select-data.xsl" xslt2="true"
+				styleSheetName="xsl/md2-in-select-data.xsl"
 			>
 				<param name="tnumber" value="${jdbc.querylistener.key}"/>
 				<forward name="success" path="Exec_Query"/>
@@ -99,7 +99,7 @@
 				<forward name="success" path="AddIgnores"/>
 			</pipe>
 			<pipe name="AddIgnores" className="nl.nn.adapterframework.pipes.XsltPipe"
-				styleSheetName="xsl/add-ignores.xsl" xslt2="true"
+				styleSheetName="xsl/add-ignores.xsl"
 			>
 				<param name="tnumber" value="${jdbc.querylistener.key}"/>
 				<forward name="success" path="EXIT"/>

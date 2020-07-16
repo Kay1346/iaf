@@ -35,7 +35,7 @@
 
 			<pipe name="getWsdlFullFileName" className="nl.nn.adapterframework.pipes.XsltPipe"
 				xpathExpression="directory/file[ends-with(@name,'.wsdl')]/@canonicalName"
-				xslt2="true">
+				>
 				<forward name="success" path="readWsdlFile" />
 			</pipe>
 
